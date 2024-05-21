@@ -70,5 +70,13 @@ cd {username}
 Then run the following commands:
 
 ```
-xz -d *json.xz
+rm *.json.xz
 ```
+
+If you're using windows, you can ignore the .json.xz files for now. 
+
+## Using the data to make entries on Admin Dashboard
+
+In each folder created, the {timestamp}.txt contains the caption of the post and {timestamp}.jpg file contains the images! 
+
+**Note**: Some posts might have multiple images!

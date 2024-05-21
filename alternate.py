@@ -3,7 +3,7 @@
 from subprocess import call
 import os
 
-username = "vandyyuva"
+username = "hinduyuvancsu"
 start_year = 2023
 start_month = 8
 custom_date_utc = "datetime("+str(start_year)+", " + str(start_month) + ", 1)"
