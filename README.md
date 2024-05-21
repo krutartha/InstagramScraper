@@ -37,3 +37,38 @@ Then, the prompt will ask you to enter the start month:
 Enter the beginning month from when you want the posts from in MM format.
 
 Then, the scraping will begin. The scrape json will be placed in the current directory im {username}.json file!
+
+Then, cd into the folder created:
+
+```
+cd {username}
+```
+
+Then run the following commands:
+
+```
+xz -d *json.xz
+```
+
+
+### If you get 401 Error (Too many requests)
+
+You can run the alterante script as follows: 
+
+```
+python alternate.py
+```
+
+**Note:** You will need to manually change the username and date in the script file
+
+Then, cd into the folder created:
+
+```
+cd {username}
+```
+
+Then run the following commands:
+
+```
+xz -d *json.xz
+```
