@@ -1,5 +1,19 @@
 ## Python Script to Scrape Posts from Instagram Profile
 
+### Prerequisites
+
+1. Download Python: https://wiki.python.org/moin/BeginnersGuide/Download
+2. Make sure python is executable from your cmd/terminal by running:
+```
+python --version
+```
+3. Make sure pip is installed:
+```
+pip --version
+```
+
+4. Optional, but recommended: Installa Anaconda and set up an environment: https://conda.io/projects/conda/en/latest/user-guide/getting-started.html
+
 ### Setup Instructions
 
 ```
@@ -47,36 +61,13 @@ cd {username}
 Then run the following commands:
 
 ```
-xz -d *json.xz
-```
-
-
-### If you get 401 Error (Too many requests)
-
-You can run the alterante script as follows: 
-
-```
-python alternate.py
-```
-
-**Note:** You will need to manually change the username and date in the script file
-
-Then, cd into the folder created:
-
-```
-cd {username}
-```
-
-Then run the following commands:
-
-```
 rm *.json.xz
 ```
 
-If you're using windows, you can ignore the .json.xz files for now. 
+**Note**: Above command will only work on a linux/unix based terminal (linux/macos). If you're using windows, you can ignore the .json.xz files for now. 
 
 ## Using the data to make entries on Admin Dashboard
 
 In each folder created, the {timestamp}.txt contains the caption of the post and {timestamp}.jpg file contains the images! 
 
-**Note**: Some posts might have multiple images!
+**Note**: Some posts might have multiple images, make sure to check all of them!
