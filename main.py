@@ -1,5 +1,6 @@
 #import
-from subprocess import call
+from subprocess import run
+import shlex
 username = input("Enter HY Chapter's Instagram username: ") #get username from commandline
 start_year = input("Enter start year in YYYY format: ") #get the year from which you want to scrape posts from
 got_valid_start_month = False #boolean to keep track of whether a valid start month has been received
@@ -12,8 +13,8 @@ while(not got_valid_start_month):
         print("Invalid start month! Please try again")
         pass
 print("###########commencing scrape###########") #print message
-custom_date_utc = "datetime("+str(start_year)+", " + str(start_month) + ", 1)"
-second_arg = '--post-filter="date_utc <=' + custom_date_utc + '"'
-call(["instaloader", second_arg, username])
+command = f'instaloader --post-filter="date_utc >= datetime({start_year}, {start_month}, 1)" {username}'
+command = shlex.split(command)
+run(command)
 print("###########scraping done###############") #print message
 
