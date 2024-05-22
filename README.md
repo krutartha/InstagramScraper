@@ -71,3 +71,8 @@ rm *.json.xz
 In each folder created, the {timestamp}.txt contains the caption of the post and {timestamp}.jpg file contains the images! 
 
 **Note**: Some posts might have multiple images, make sure to check all of them!
+
+### Common Errors
+
+1. **HTTP error code 401**: Please check the username you entered and make sure it's a valid username
+2. More common errors and fixes will be updated soon...
