@@ -50,25 +50,11 @@ Then, the prompt will ask you to enter the start month:
 
 Enter the beginning month from when you want the posts from in MM format.
 
-Then, the scraping will begin. The scrape json will be placed in the current directory im {username}.json file!
-
-Then, cd into the folder created:
-
-```
-cd {username}
-```
-
-Then run the following commands:
-
-```
-rm *.json.xz
-```
-
-**Note**: Above command will only work on a linux/unix based terminal (linux/macos). If you're using windows, you can ignore the .json.xz files for now. 
+Then, the scraping will begin. The scrape files will be placed in a directory with the name {username}
 
 ## Using the data to make entries on Admin Dashboard
 
-In each folder created, the {timestamp}.txt contains the caption of the post and {timestamp}.jpg file contains the images! 
+In each {username} directory created, the {timestamp}.txt contains the caption of the post and {timestamp}.jpg file contains the images! 
 
 **Note**: Some posts might have multiple images, make sure to check all of them!
 
